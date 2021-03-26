@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+
+<html>
+  
+</head>
+<meta charset="utf-8">
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"> 
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4"><img src="images" class="rounded float-start"/>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a class="navbar-brand" href="#">First Call Resolutions</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active"><a class="nav-link" href="/">Call Agent<span class="sr-only">(current)</span></a></li>
+        <li class="nav-item"><a class="nav-link" href="contactos">Reporting</a></li>
+        <li class="nav-item"> </li>
+      </ul>
+      <form class="form-inline mt-2 mt-md-0"></form>
+    </div>
+  </nav>
+  <main class="container" role="main">
+    <div class="row">
+      <div class="col-sm-4"> 
+        <h2>Call</h2>
+        <p><iframe src="https://tcsi2i.awsapps.com/connect/ccp-v2/softphone" allow="microphone; autoplay" width="250" height="450"></iframe>
+          <!--img.image(src='public/imges/Logo.png' + img_path_var )-->
+        </p>
+        <p></p>
+      </div>
+      <div class="col-md-3">
+           <form method="post" action="/addname">
+                <h2>Date Information
+                <p></p>
+                <div class="wrapper">
+                    <div class="d-flex align-items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-headset" viewBox="0 0 16 16">
+                            <path d="M8 1a5 5 0 0 0-5 5v1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a6 6 0 1 1 12 0v6a2.5 2.5 0 0 1-2.5 2.5H9.366a1 1 0 0 1-.866.5h-1a1 1 0 1 1 0-2h1a1 1 0 0 1 .866.5H11.5A1.5 1.5 0 0 0 13 12h-1a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h1V6a5 5 0 0 0-5-5z"/>
+                          </svg>  &nbsp&nbsp
+                        <strong> <input class="form-control mr-sm-2" type="text" name="CallID" placeholder="CALL ID" required> </strong>
+                        </div>
+                      </div>
+              
+                <p></p>
+                <div class="wrapper">
+                    <div class="d-flex align-items-center">
+                        <div class="spinner-grow text-info" role="status">
+                            <span class="sr-only">Loading...</span>
+                            
+                        </div> &nbsp
+                        <strong><input class="form-control mr-sm-2 input-lg" type= "text" name="SD" placeholder="SHORT DESCRIPTION" required> </strong>
+                      </div>
+                <p></p>
+                <div class="spinner-grow text-warning" role="status">
+                    <span class="sr-only">Loading...</span>
+                  </div>    
+                <select class="btn btn-warning dropdown-toggle"  name="State">
+                    <option selected>State Ticket</option>
+                    <option value="Open">Open</option>
+                    <option value="Close">Close</option>
+                  </select>
+                <p></p>
+                <br>
+       
+                &nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp &nbsp&nbsp<input class="btn btn-primary btn-lg"  type="submit" value="Accept">
+            
+            </form>
+
+          
+        </h2>
+      </div>
+      <div class="col-sm-1"></div>
+      <div class="col-md-4">
+        <h2>Resolve Information</h2>
+        <table class="table table-striped">
+            <thead class="thead-dark">
+          <tr> 
+            <th>Call ID </th>
+            <th>Short Description</th>
+            <th>Ticket </th>
+          </tr>
+          <script></script>
+          <tr> 
+            <td>001</td>
+            <td>Adam </td>
+            <td>25</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <hr/>
+  </main>
+  <footer></footer>
+  <div class="container">
+    <div align="center"><a target="_blank">Desarrollado por i2i TCS</a></div>
+  </div>
+
+</body>
+</html>
