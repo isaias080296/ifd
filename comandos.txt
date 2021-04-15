@@ -1,0 +1,30 @@
+node app.js
+
+https://education.github.com/git-cheat-sheet-education.pdf
+git config --global user.name "hedulove"
+NOK git config --global user.email "hedulove@yahoo.com"
+git config --global user.email "hectorduran@hotmail.com"
+git init
+Reinitialized existing Git repository in C:/Users/i2i/Downloads/ifd-hector/ifd-hector/.git/
+git clone https://github.com/isaias080296/ifd.git
+git status
+git log
+git add .
+#git push -u origin hector
+git remote add [alias] [url]
+?  git remote add hector https://github.com/isaias080296/ifd.git
+git fetch [alias]
+git fetch hector
+git push [alias] [branch]
+git push hector hector
+
+git push -f hector master       y sale el login
+Chais debe dar permiso
+
+git branch
+git add .
+git commit -m "version inicial hector3"
+git checkout hector
+git push -u hector hector
+
+++++++++++++++++++++
