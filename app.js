@@ -21,6 +21,35 @@ app.get("/", (req, res) => {
     res.sendFile(__dirname + "/index.html");
 });
 
+app.get("/dependencias/marco_normativo.html", (req, res) => {
+    res.sendFile(__dirname + "/dependencias/marco_normativo.html");
+});
+
+app.get("/dependencias/atribuciones.html", (req, res) => {
+    res.sendFile(__dirname + "/dependencias/atribuciones.html");
+});
+
+
+app.get("/dependencias/acerca_de.html", (req, res) => {
+    res.sendFile(__dirname + "/dependencias/acerca_de.html");
+});
+
+app.get("/dependencias/marco_normativo.html", (req, res) => {
+    res.sendFile(__dirname + "/dependencias/marco_normativo.html");
+});
+
+app.get("/dependencias/directorio.html", (req, res) => {
+    res.sendFile(__dirname + "/dependencias/directorio.html");
+});
+
+
+app.get("/dependencias/organigrama.html", (req, res) => {
+    res.sendFile(__dirname + "/dependencias/organigrama.html");
+});
+
+app.get("/dependencias/contacto.html", (req, res) => {
+    res.sendFile(__dirname + "/dependencias/contacto.html");
+});
 
 
 app.get("/images", (req, res) => {
