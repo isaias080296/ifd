@@ -29,6 +29,14 @@ app.get("/dependencias/atribuciones.html", (req, res) => {
     res.sendFile(__dirname + "/dependencias/atribuciones.html");
 });
 
+app.get("/dependencias/script.js", (req, res) => {
+    res.sendFile(__dirname + "/dependencias/script.js");
+});
+
+app.get("/dependencias/style.css", (req, res) => {
+    res.sendFile(__dirname + "/dependencias/style.css");
+});
+
 
 app.get("/dependencias/acerca_de.html", (req, res) => {
     res.sendFile(__dirname + "/dependencias/acerca_de.html");
