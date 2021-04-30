@@ -60,6 +60,45 @@ app.get("/dependencias/contacto.html", (req, res) => {
 });
 
 
+/////////////////////////////////////////Jefaturas
+app.get("/jefaturas/bienestaryfamiliar.html", (req, res) => {
+    res.sendFile(__dirname + "/jefaturas/bienestaryfamiliar.html");
+});
+
+app.get("/jefaturas/juridica.html", (req, res) => {
+    res.sendFile(__dirname + "/jefaturas/juridica.html");
+});
+
+app.get("/jefaturas/psicologia.html", (req, res) => {
+    res.sendFile(__dirname + "/jefaturas/psicologia.html");
+});
+
+app.get("/jefaturas/rehabilitacion.html", (req, res) => {
+    res.sendFile(__dirname + "/jefaturas/rehabilitacion.html");
+});
+
+
+//////////////////////////////////Noticias
+
+
+app.get("/noticias/noticias.html", (req, res) => {
+    res.sendFile(__dirname + "/noticias/noticias.html");
+});
+
+
+///////// Atnecion ciudadana 
+
+app.get("/atencion.html", (req, res) => {
+    res.sendFile(__dirname + "/atencion.html");
+});
+
+
+
+
+
+
+
+
 app.get("/images", (req, res) => {
     res.sendFile(__dirname + "/images/Logo.png");
 });
