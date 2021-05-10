@@ -39,9 +39,7 @@
                             nodeHTML = "<div class=\"dtree-wrapper " + (settings.isHorizontal ? 'dtree-x' : '') + "\">";
 
                         if (settings.searchbox) {
-                            nodeHTML += "<div class=\"dtree-searchbox\"><input type=\"text\" class=\"dtree-search-control\"><i class=\"dtree-search-icon\"></i>" +
-                                "<ul class=\"dtree-search-list\"></ul>" +
-                                "</div>";
+                            nodeHTML += "";
                         }
 
 
@@ -123,7 +121,7 @@
                     });
                 },
                 getNodeDimensions: function () {
-                    $('body').append("<div id=\"tempNode\"><div class=\"dtree-node\"><div class=\"dtree-img\"><img src=\"https://x1.xingassets.com/assets/frontend_minified/img/users/nobody_m.original.jpg\"></div> <div class=\"dtree-name\">mmmmmmmmmm</div><span class=\"dtree-branch\"><i></i><i></i></span></div></div>");
+                    $('body').append(" <div id=\"tempNode\"><div class=\"dtree-node\"><div class=\"dtree-img\"><img src=\"https://x1.xingassets.com/assets/frontend_minified/img/users/nobody_m.original.jpg\"></div> <div class=\"dtree-name\">mmmmmmmmmm</div><span class=\"dtree-branch\"><i></i><i></i></span></div></div>");
                     var $tempNode = $("#tempNode");
                     var tw = $tempNode.children().eq(0).outerWidth(true),
                         th = $tempNode.children().eq(0).outerHeight(true);
@@ -264,11 +262,20 @@ var treeNodes = [
     },
     {
         id: 79,
+        pid: 21,
+        name: "Subdirección",
+        txt: "De la Mujer y Juventud",
+        img: ""
+    },
+    {
+        id: 79,
         pid: 71,
         name: "Direccion",
         txt: "DIF CRI",
         img: ""
     },
+   
+    
     {
         id: 26,
         pid: 79,
@@ -300,17 +307,11 @@ var treeNodes = [
     {
         id: 30,
         pid: 79,
-        name: "Subdireccion",
-        txt: "De la Mujer y Juventud",
-        img: ""
-    },
-    {
-        id: 80,
-        pid: 30,
         name: "Jefatura",
         txt: "De la Juventud",
         img: ""
     },
+ 
 ];
   $("#ochart").dtree({
     isHorizontal: false,

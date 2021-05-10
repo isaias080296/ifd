@@ -5,17 +5,32 @@ var bodyParser = require('body-parser');
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-var mongoose = require("mongoose");
-mongoose.Promise = global.Promise;
-mongoose.connect("mongodb://localhost:27017/node-demo");
-var nameSchema = new mongoose.Schema({
-    CallID: String,
-    SD: String,
-    State: String,
+const morgan = require('morgan');
 
 
-});
-var User = mongoose.model("User", nameSchema);
+const mongoose = require('mongoose');
+
+
+
+
+// Just add bluebird to your package.json, and then the following line should work
+mongoose.Promise = require('bluebird');
+
+ mongoose.connect('mongodb+srv://Isaias:Atlixco1234@cluster0.mxvw9.mongodb.net/fcr');
+
+
+
+ const schema= mongoose.Schema({
+    email: {type: String},
+    phone: {type: String},
+    description: {type:String},
+
+
+})
+
+
+const User = mongoose.model("User", schema);
+
 
 app.get("/", (req, res) => {
     res.sendFile(__dirname + "/index.html");
@@ -103,11 +118,11 @@ app.get("/images", (req, res) => {
     res.sendFile(__dirname + "/images/Logo.png");
 });
 
-app.post("/addname", (req, res) => {
+app.post("/add", (req, res) => {
     var myData = new User(req.body);
     myData.save()
         .then(item => {
-            res.send("Name saved to database");
+            res.sendFile(__dirname + "/atencion.html");
         })
         .catch(err => {
             res.status(400).send("Unable to save to database");
@@ -117,3 +132,6 @@ app.post("/addname", (req, res) => {
 app.listen(port, () => {
     console.log("Server listening on port " + port);
 });
+
+app.use(morgan('dev'));
+app.use(express.urlencoded({extended: false}))
